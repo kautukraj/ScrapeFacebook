@@ -9,12 +9,13 @@ import lxml
 # Beautiful Soup relies on a parser, the default is lxml
 # https://www.crummy.com/software/BeautifulSoup/bs4/doc/#specifying-the-parser-to-use
 
-pages =['ConsultNexus']  # list of pages to scrape
+pages = [str(input("Enter the page name: "))]  # list of pages to scrape
+
 if not os.path.exists("FacebookPages"):
     os.mkdir("FacebookPages")
 
 for page in pages:
-    driver = webdriver.Chrome(r"C:/Users/iiitb/Desktop/zense/chromedriver.exe")  # making an instance of ChromeDriver
+    driver = webdriver.Chrome(r"C:/Users/iiitb/Desktop/else/zense/chromedriver.exe")  # making an instance of ChromeDriver
     driver.get('https://www.facebook.com/' + page + '/posts')
 
     # https://stackoverflow.com/questions/20986631/how-can-i-scroll-a-web-page-using-selenium-webdriver-in-python
