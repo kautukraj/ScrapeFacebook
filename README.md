@@ -12,3 +12,5 @@ Made using Python, Selenium and BeautifulSoup for Zense. Please read [report.pdf
 - Setup environment variable for browser driver or mention the path explicitly while creating the object as `webdriver.Chrome (“path”)`.
 - Enter path to your favorite webbrowser using `webbrowser.get`. 
 
+## Screenshot
+![Screenshot](screenshot.png)
